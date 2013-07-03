@@ -12,6 +12,16 @@ I prefer to write my presentations in markdown, so I have removed the
 yourself, checkout the appropriate branch for the presentation you're interested
 in and run `make`.
 
+### Literate Presentations
+
+The makefile supports presentations written in a literate style using [Literate
+Haskell](http://www.haskell.org/haskellwiki/Literate_programming).  Simply name
+your file `index.md.lhs` instead of `index.md` and write your Haskell sections
+using Bird style.
+
+If there is an `index.md.lhs` in the repository, `make run` will execute it
+using `runhaskell`.
+
 ## Licence
 
 ### Presentation content
